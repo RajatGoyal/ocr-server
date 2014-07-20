@@ -2,8 +2,8 @@
 
 NAME="supertramp-server"                          # Name of the application
 DJANGODIR=~/ocr-server                            # Django project directory
-SOCKFILE=/ocr-server/gunicorn.sock                # we will communicte using this unix socket
-USER=ubuntu                                       # the user to run as
+SOCKFILE=~/ocr-server/gunicorn.sock               # we will communicte using this unix socket
+USER=azureuser                                    # the user to run as
 #GROUP=webapps                                    # the group to run as
 NUM_WORKERS=20                                    # how many worker processes should Gunicorn spawn
 DJANGO_SETTINGS_MODULE=supertramp_server.settings # which settings file should Django use
