@@ -1,4 +1,4 @@
-[server]
+[program:supertramp_server]
 command = /home/azureuser/ocr-server/bin/gunicorn_start.bash
 user = azureuser
 stdout_logfile = /home/azureuser/ocr-server/logs/gunicorn_supervisor.log
