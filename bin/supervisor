@@ -1,0 +1,5 @@
+[supertramp_server]
+command = ~/ocr-server/bin/gunicorn_start.bash
+user = azureuser
+stdout_logfile = ~/ocr-server/logs/gunicorn_supervisor.log
+redirect_stderr = true

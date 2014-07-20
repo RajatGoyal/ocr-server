@@ -35,7 +35,6 @@ class Task(ModelResource):
             url(r"^(?P<resource_name>%s)/([^/]+%s)?$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('home'), name="home")
             ]
 
-
     def run_ocr(self,request, **kwargs):
         self.method_check(request, allowed=['get', 'post'])
         try:
