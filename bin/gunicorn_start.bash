@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="supertramp-server"                          # Name of the application
+NAME="supertramp_server"                          # Name of the application
 DJANGODIR=~/ocr-server                            # Django project directory
 SOCKFILE=~/ocr-server/gunicorn.sock               # we will communicte using this unix socket
 USER=azureuser                                    # the user to run as
