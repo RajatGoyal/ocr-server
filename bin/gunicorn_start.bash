@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NAME="supertramp_server"                          # Name of the application
-DJANGODIR=~/ocr-server                            # Django project directory
-SOCKFILE=~/ocr-server/gunicorn.sock               # we will communicte using this unix socket
+DJANGODIR=/home/azureuser/ocr-server                            # Django project directory
+SOCKFILE=/home/azureuser/ocr-server/gunicorn.sock               # we will communicte using this unix socket
 USER=azureuser                                    # the user to run as
 #GROUP=webapps                                    # the group to run as
 NUM_WORKERS=20                                    # how many worker processes should Gunicorn spawn

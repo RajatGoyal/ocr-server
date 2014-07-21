@@ -39,11 +39,13 @@ class Task(ModelResource):
         self.method_check(request, allowed=['get', 'post'])
         try:
             language = request.POST.get('language','eng')
-            instance = Details.objects.create(File=request.FILES.get('image'))
-            import code;code.interact(local=locals())
-            instance.result = image_to_string(Image.open('test-european.jpg'), lang=language)
+            instance = Details.objects.create(image=request.FILES.get('image'))
             instance.save()
-            response = self.create_response(request, {'success':True})
+            image_obj = Image.open(instance.image.path).convert('RGB')
+            instance.result = image_to_string(image_obj, lang=language)
+            instance.save()
+            result = instance.result
+            response = self.create_response(request, {'success':True, 'result': result})
         except Exception, e:
             response = self.create_response(request, {'success': False, 'errMsg': str(e)})
 
