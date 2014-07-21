@@ -1,0 +1,189 @@
+Starting supertramp-server as azureuser
+2014-07-20 22:16:11 [6509] [INFO] Starting gunicorn 0.13.4
+2014-07-20 22:16:11 [6509] [DEBUG] Arbiter booted
+2014-07-20 22:16:11 [6509] [INFO] Listening at: unix:/home/azureuser/ocr-server/gunicorn.sock (6509)
+2014-07-20 22:16:11 [6509] [INFO] Using worker: sync
+2014-07-20 22:16:11 [6519] [INFO] Booting worker with pid: 6519
+2014-07-20 22:16:11 [6518] [INFO] Booting worker with pid: 6518
+2014-07-20 22:16:11 [6520] [INFO] Booting worker with pid: 6520
+2014-07-20 22:16:11 [6521] [INFO] Booting worker with pid: 6521
+2014-07-20 22:16:11 [6523] [INFO] Booting worker with pid: 6523
+2014-07-20 22:16:11 [6522] [INFO] Booting worker with pid: 6522
+2014-07-20 22:16:11 [6525] [INFO] Booting worker with pid: 6525
+2014-07-20 22:16:11 [6527] [INFO] Booting worker with pid: 6527
+2014-07-20 22:16:11 [6524] [INFO] Booting worker with pid: 6524
+2014-07-20 22:16:11 [6528] [INFO] Booting worker with pid: 6528
+2014-07-20 22:16:11 [6529] [INFO] Booting worker with pid: 6529
+2014-07-20 22:16:11 [6530] [INFO] Booting worker with pid: 6530
+2014-07-20 22:16:11 [6531] [INFO] Booting worker with pid: 6531
+2014-07-20 22:16:11 [6532] [INFO] Booting worker with pid: 6532
+2014-07-20 22:16:11 [6533] [INFO] Booting worker with pid: 6533
+2014-07-20 22:16:11 [6526] [INFO] Booting worker with pid: 6526
+2014-07-20 22:16:12 [6534] [INFO] Booting worker with pid: 6534
+2014-07-20 22:16:12 [6535] [INFO] Booting worker with pid: 6535
+2014-07-20 22:16:12 [6536] [INFO] Booting worker with pid: 6536
+2014-07-20 22:16:12 [6537] [INFO] Booting worker with pid: 6537
+Starting supertramp-server as azureuser
+2014-07-20 22:19:47 [6570] [INFO] Starting gunicorn 0.13.4
+2014-07-20 22:19:47 [6570] [DEBUG] Arbiter booted
+2014-07-20 22:19:47 [6570] [INFO] Listening at: unix:/home/azureuser/ocr-server/gunicorn.sock (6570)
+2014-07-20 22:19:47 [6570] [INFO] Using worker: sync
+2014-07-20 22:19:47 [6580] [INFO] Booting worker with pid: 6580
+2014-07-20 22:19:47 [6579] [INFO] Booting worker with pid: 6579
+2014-07-20 22:19:47 [6581] [INFO] Booting worker with pid: 6581
+2014-07-20 22:19:47 [6582] [INFO] Booting worker with pid: 6582
+2014-07-20 22:19:47 [6584] [INFO] Booting worker with pid: 6584
+2014-07-20 22:19:47 [6583] [INFO] Booting worker with pid: 6583
+2014-07-20 22:19:47 [6585] [INFO] Booting worker with pid: 6585
+2014-07-20 22:19:47 [6586] [INFO] Booting worker with pid: 6586
+2014-07-20 22:19:48 [6588] [INFO] Booting worker with pid: 6588
+2014-07-20 22:19:47 [6587] [INFO] Booting worker with pid: 6587
+2014-07-20 22:19:48 [6589] [INFO] Booting worker with pid: 6589
+2014-07-20 22:19:48 [6590] [INFO] Booting worker with pid: 6590
+2014-07-20 22:19:48 [6591] [INFO] Booting worker with pid: 6591
+2014-07-20 22:19:48 [6592] [INFO] Booting worker with pid: 6592
+2014-07-20 22:19:48 [6593] [INFO] Booting worker with pid: 6593
+2014-07-20 22:19:48 [6594] [INFO] Booting worker with pid: 6594
+2014-07-20 22:19:48 [6595] [INFO] Booting worker with pid: 6595
+2014-07-20 22:19:48 [6597] [INFO] Booting worker with pid: 6597
+2014-07-20 22:19:48 [6598] [INFO] Booting worker with pid: 6598
+2014-07-20 22:19:48 [6596] [INFO] Booting worker with pid: 6596
+Starting supertramp-server as azureuser
+2014-07-20 22:21:48 [6661] [INFO] Starting gunicorn 0.13.4
+2014-07-20 22:21:48 [6661] [DEBUG] Arbiter booted
+2014-07-20 22:21:48 [6661] [INFO] Listening at: unix:/home/azureuser/ocr-server/gunicorn.sock (6661)
+2014-07-20 22:21:48 [6661] [INFO] Using worker: sync
+2014-07-20 22:21:48 [6670] [INFO] Booting worker with pid: 6670
+2014-07-20 22:21:48 [6671] [INFO] Booting worker with pid: 6671
+2014-07-20 22:21:48 [6672] [INFO] Booting worker with pid: 6672
+2014-07-20 22:21:48 [6673] [INFO] Booting worker with pid: 6673
+2014-07-20 22:21:48 [6674] [INFO] Booting worker with pid: 6674
+2014-07-20 22:21:48 [6675] [INFO] Booting worker with pid: 6675
+2014-07-20 22:21:48 [6676] [INFO] Booting worker with pid: 6676
+2014-07-20 22:21:48 [6677] [INFO] Booting worker with pid: 6677
+2014-07-20 22:21:48 [6678] [INFO] Booting worker with pid: 6678
+2014-07-20 22:21:48 [6679] [INFO] Booting worker with pid: 6679
+2014-07-20 22:21:48 [6680] [INFO] Booting worker with pid: 6680
+2014-07-20 22:21:48 [6682] [INFO] Booting worker with pid: 6682
+2014-07-20 22:21:48 [6681] [INFO] Booting worker with pid: 6681
+2014-07-20 22:21:48 [6683] [INFO] Booting worker with pid: 6683
+2014-07-20 22:21:48 [6684] [INFO] Booting worker with pid: 6684
+2014-07-20 22:21:48 [6685] [INFO] Booting worker with pid: 6685
+2014-07-20 22:21:49 [6686] [INFO] Booting worker with pid: 6686
+2014-07-20 22:21:49 [6687] [INFO] Booting worker with pid: 6687
+2014-07-20 22:21:49 [6688] [INFO] Booting worker with pid: 6688
+2014-07-20 22:21:49 [6689] [INFO] Booting worker with pid: 6689
+Starting supertramp_server as azureuser
+2014-07-20 22:23:37 [6851] [INFO] Starting gunicorn 0.13.4
+2014-07-20 22:23:37 [6851] [DEBUG] Arbiter booted
+2014-07-20 22:23:37 [6851] [INFO] Listening at: unix:/home/azureuser/ocr-server/gunicorn.sock (6851)
+2014-07-20 22:23:37 [6851] [INFO] Using worker: sync
+2014-07-20 22:23:37 [6861] [INFO] Booting worker with pid: 6861
+2014-07-20 22:23:37 [6860] [INFO] Booting worker with pid: 6860
+2014-07-20 22:23:37 [6863] [INFO] Booting worker with pid: 6863
+2014-07-20 22:23:37 [6865] [INFO] Booting worker with pid: 6865
+2014-07-20 22:23:37 [6862] [INFO] Booting worker with pid: 6862
+2014-07-20 22:23:37 [6864] [INFO] Booting worker with pid: 6864
+2014-07-20 22:23:37 [6866] [INFO] Booting worker with pid: 6866
+2014-07-20 22:23:37 [6867] [INFO] Booting worker with pid: 6867
+2014-07-20 22:23:37 [6868] [INFO] Booting worker with pid: 6868
+2014-07-20 22:23:37 [6869] [INFO] Booting worker with pid: 6869
+2014-07-20 22:23:38 [6872] [INFO] Booting worker with pid: 6872
+2014-07-20 22:23:38 [6873] [INFO] Booting worker with pid: 6873
+2014-07-20 22:23:38 [6871] [INFO] Booting worker with pid: 6871
+2014-07-20 22:23:38 [6874] [INFO] Booting worker with pid: 6874
+2014-07-20 22:23:38 [6875] [INFO] Booting worker with pid: 6875
+2014-07-20 22:23:38 [6870] [INFO] Booting worker with pid: 6870
+2014-07-20 22:23:38 [6876] [INFO] Booting worker with pid: 6876
+2014-07-20 22:23:38 [6877] [INFO] Booting worker with pid: 6877
+2014-07-20 22:23:38 [6878] [INFO] Booting worker with pid: 6878
+2014-07-20 22:23:38 [6879] [INFO] Booting worker with pid: 6879
+Starting supertramp_server as azureuser
+2014-07-20 22:27:37 [7192] [INFO] Starting gunicorn 0.13.4
+2014-07-20 22:27:37 [7192] [DEBUG] Arbiter booted
+2014-07-20 22:27:37 [7192] [INFO] Listening at: unix:/home/azureuser/ocr-server/gunicorn.sock (7192)
+2014-07-20 22:27:37 [7192] [INFO] Using worker: sync
+2014-07-20 22:27:37 [7201] [INFO] Booting worker with pid: 7201
+2014-07-20 22:27:37 [7202] [INFO] Booting worker with pid: 7202
+2014-07-20 22:27:37 [7203] [INFO] Booting worker with pid: 7203
+2014-07-20 22:27:37 [7204] [INFO] Booting worker with pid: 7204
+2014-07-20 22:27:37 [7205] [INFO] Booting worker with pid: 7205
+2014-07-20 22:27:37 [7206] [INFO] Booting worker with pid: 7206
+2014-07-20 22:27:37 [7207] [INFO] Booting worker with pid: 7207
+2014-07-20 22:27:37 [7208] [INFO] Booting worker with pid: 7208
+2014-07-20 22:27:37 [7209] [INFO] Booting worker with pid: 7209
+2014-07-20 22:27:37 [7210] [INFO] Booting worker with pid: 7210
+2014-07-20 22:27:37 [7211] [INFO] Booting worker with pid: 7211
+2014-07-20 22:27:37 [7212] [INFO] Booting worker with pid: 7212
+2014-07-20 22:27:37 [7213] [INFO] Booting worker with pid: 7213
+2014-07-20 22:27:38 [7214] [INFO] Booting worker with pid: 7214
+2014-07-20 22:27:38 [7215] [INFO] Booting worker with pid: 7215
+2014-07-20 22:27:38 [7216] [INFO] Booting worker with pid: 7216
+2014-07-20 22:27:38 [7217] [INFO] Booting worker with pid: 7217
+2014-07-20 22:27:38 [7218] [INFO] Booting worker with pid: 7218
+2014-07-20 22:27:38 [7220] [INFO] Booting worker with pid: 7220
+2014-07-20 22:27:38 [7219] [INFO] Booting worker with pid: 7219
+Starting supertramp_server as azureuser
+2014-07-20 22:53:21 [7523] [INFO] Starting gunicorn 0.13.4
+2014-07-20 22:53:21 [7523] [DEBUG] Arbiter booted
+2014-07-20 22:53:21 [7523] [INFO] Listening at: unix:/home/azureuser/ocr-server/gunicorn.sock (7523)
+2014-07-20 22:53:21 [7523] [INFO] Using worker: sync
+2014-07-20 22:53:21 [7534] [INFO] Booting worker with pid: 7534
+2014-07-20 22:53:21 [7535] [INFO] Booting worker with pid: 7535
+2014-07-20 22:53:21 [7533] [INFO] Booting worker with pid: 7533
+2014-07-20 22:53:21 [7536] [INFO] Booting worker with pid: 7536
+2014-07-20 22:53:21 [7537] [INFO] Booting worker with pid: 7537
+2014-07-20 22:53:21 [7539] [INFO] Booting worker with pid: 7539
+2014-07-20 22:53:21 [7538] [INFO] Booting worker with pid: 7538
+2014-07-20 22:53:21 [7540] [INFO] Booting worker with pid: 7540
+2014-07-20 22:53:21 [7541] [INFO] Booting worker with pid: 7541
+2014-07-20 22:53:21 [7542] [INFO] Booting worker with pid: 7542
+2014-07-20 22:53:21 [7544] [INFO] Booting worker with pid: 7544
+2014-07-20 22:53:21 [7545] [INFO] Booting worker with pid: 7545
+2014-07-20 22:53:21 [7546] [INFO] Booting worker with pid: 7546
+2014-07-20 22:53:21 [7543] [INFO] Booting worker with pid: 7543
+2014-07-20 22:53:21 [7547] [INFO] Booting worker with pid: 7547
+2014-07-20 22:53:21 [7550] [INFO] Booting worker with pid: 7550
+2014-07-20 22:53:21 [7551] [INFO] Booting worker with pid: 7551
+2014-07-20 22:53:21 [7548] [INFO] Booting worker with pid: 7548
+2014-07-20 22:53:21 [7549] [INFO] Booting worker with pid: 7549
+2014-07-20 22:53:22 [7552] [INFO] Booting worker with pid: 7552
+2014-07-20 22:58:39 [7552] [DEBUG] GET /owlsdfs
+2014-07-20 22:58:45 [7544] [DEBUG] GET /owl
+2014-07-20 22:58:52 [7545] [DEBUG] GET /owl/nginx
+Starting supertramp_server as azureuser
+2014-07-20 23:01:29 [7841] [INFO] Starting gunicorn 0.13.4
+2014-07-20 23:01:29 [7841] [DEBUG] Arbiter booted
+2014-07-20 23:01:29 [7841] [INFO] Listening at: unix:/home/azureuser/ocr-server/gunicorn.sock (7841)
+2014-07-20 23:01:29 [7841] [INFO] Using worker: sync
+2014-07-20 23:01:29 [7850] [INFO] Booting worker with pid: 7850
+2014-07-20 23:01:29 [7851] [INFO] Booting worker with pid: 7851
+2014-07-20 23:01:29 [7852] [INFO] Booting worker with pid: 7852
+2014-07-20 23:01:29 [7854] [INFO] Booting worker with pid: 7854
+2014-07-20 23:01:29 [7855] [INFO] Booting worker with pid: 7855
+2014-07-20 23:01:29 [7853] [INFO] Booting worker with pid: 7853
+2014-07-20 23:01:29 [7856] [INFO] Booting worker with pid: 7856
+2014-07-20 23:01:29 [7857] [INFO] Booting worker with pid: 7857
+2014-07-20 23:01:29 [7859] [INFO] Booting worker with pid: 7859
+2014-07-20 23:01:29 [7858] [INFO] Booting worker with pid: 7858
+2014-07-20 23:01:29 [7861] [INFO] Booting worker with pid: 7861
+2014-07-20 23:01:29 [7862] [INFO] Booting worker with pid: 7862
+2014-07-20 23:01:29 [7863] [INFO] Booting worker with pid: 7863
+2014-07-20 23:01:29 [7864] [INFO] Booting worker with pid: 7864
+2014-07-20 23:01:29 [7865] [INFO] Booting worker with pid: 7865
+2014-07-20 23:01:29 [7866] [INFO] Booting worker with pid: 7866
+2014-07-20 23:01:29 [7867] [INFO] Booting worker with pid: 7867
+2014-07-20 23:01:29 [7860] [INFO] Booting worker with pid: 7860
+2014-07-20 23:01:30 [7868] [INFO] Booting worker with pid: 7868
+2014-07-20 23:01:30 [7869] [INFO] Booting worker with pid: 7869
+2014-07-20 23:02:48 [7856] [DEBUG] GET /owl
+2014-07-20 23:02:58 [7851] [DEBUG] GET /ocr
+2014-07-20 23:03:03 [7868] [DEBUG] GET /ocr/
+2014-07-20 23:03:07 [7851] [DEBUG] GET /ocr/api
+2014-07-20 23:03:10 [7851] [DEBUG] GET /ocr/api/
+2014-07-20 23:03:15 [7865] [DEBUG] GET /ocr/api/task/add
+2014-07-20 23:03:26 [7869] [DEBUG] GET /ocr/api/v1/task/add
+2014-07-20 23:03:27 [7851] [DEBUG] GET /ocr/api/v1/task/add/
+2014-07-21 00:06:51 [7869] [DEBUG] GET /ocr/api/v1/task/add/
+2014-07-21 00:07:07 [7865] [DEBUG] GET /ocr/api/v1/task/home
+2014-07-21 00:07:07 [7851] [DEBUG] GET /ocr/api/v1/task/home/
