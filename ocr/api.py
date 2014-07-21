@@ -36,7 +36,7 @@ class Task(ModelResource):
             ]
 
     def run_ocr(self,request, **kwargs):
-        self.method_check(request, allowed=['get', 'post'])
+        self.method_check(request, allowed=['post'])
         try:
             language = request.POST.get('language','eng')
             instance = Details.objects.create(image=request.FILES.get('image'))
