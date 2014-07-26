@@ -3,16 +3,17 @@ Django server, exposes a api endpoint to submit request for OCR, Runs OCR and gi
 
 Development Requirements
 ====
-####Python
-####Django
-####Tesseract
-
+*Python
+*Django
+*Tesseract
+*Tastypie
 
 Deployment Requirements
 ====
-####Python
-####Django
-####Tesseract
-####Gunicorn
-####Nginx
-####Supervisor
+*Python
+*Django
+*Tesseract
+*Tastypie
+*Gunicorn
+*Nginx
+*Supervisor
