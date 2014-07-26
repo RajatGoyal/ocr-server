@@ -1,4 +1,18 @@
-ocr-server
-==========
+Django server, exposes a api endpoint to submit request for OCR, Runs OCR and gives the result back in response.
 
-OCR server for the ocr plugin django
+
+Development Requirements
+====
+####Python
+####Django
+####Tesseract
+
+
+Deployment Requirements
+====
+####Python
+####Django
+####Tesseract
+####Gunicorn
+####Nginx
+####Supervisor
