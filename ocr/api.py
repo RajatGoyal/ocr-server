@@ -66,10 +66,12 @@ class Task(ModelResource):
 
     @csrf_exempt
     def proxy_get(self, request, url, **kwargs):
+        print "url"
         url = url + "?"+request.META['QUERY_STRING']
+        print url
         headers={"Authorization": request.META.get('HTTP_AUTHORIZATION')}
         resp = requests.get(url, headers=headers, data=request.REQUEST)
-        return HttpResponse(resp.content, mimetype='application/json')
+        return self.create_response(request, resp.content)
 
 
     def home(self, request, **kwargs):
