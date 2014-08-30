@@ -38,8 +38,8 @@ class Task(ModelResource):
     class Meta:
         resource_name = 'task'
         queryset = Details.objects.all()
-        authentication = MultiAuthentication(BasicAuthentication(), ApiKeyAuthentication())
-        authorization = DjangoAuthorization()
+        # authentication = MultiAuthentication(BasicAuthentication(), ApiKeyAuthentication())
+        # authorization = DjangoAuthorization()
 
     def prepend_urls(self):
         return [
