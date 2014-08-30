@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% block content %}
+{#{% load offertag %}#}
+
+    <script>
+    $(document).on("click", ".end_offer", function(e) {
+            var ref = $(this)
+            bootbox.confirm("This will end and delete offer '" + $(this).attr("offer_name") + "' ?", function(result) {
+                if (result == true)
+                {
+                offer_id = ref.attr('offer_id')
+                url_delete = ''.replace(9999999999, offer_id)
+
+                $.ajax({
+                      url: url_delete,
+                      success: function(){
+                          window.location= "{% url "home" %}"
+                         }
+                    });
+                }
+            });
+    });
+
+    $(document).on("click", ".delete_idle_screen", function(e) {
+            var ref = $(this)
+            bootbox.confirm("This will remove the idle screen from the device ?", function(result) {
+                if(result == true)
+                {
+                id = ref.attr('idle_screen_id')
+                url_delete = ''.replace(9999999999, id)
+
+                $.ajax({
+                      url: url_delete,
+                      success: function(){
+                          window.location= "{% url "home" %}"
+                         }
+                    });
+                }
+            });
+    });
+
+    </script>
+    <div class="col-lg-12">
+          <section class="toolbar clearfix m-t-large m-b">
+            <a class="btn btn-primary btn-circle active"><i class="icon-archive"></i>Offers<b class="badge bg-white">{{ queryset|length }}</b></a>
+{#            <a class="btn btn-success btn-circle"><i class="icon-check"></i>Top Styles<b class="badge bg-white">5</b></a>#}
+            <a class="btn btn-default btn-circle"><i class="icon-coffee"></i>Idle Screen</a>
+          </section>
+    </div>
+    <div class="row">
+    <div class="col-lg-6">
+          <section class="panel">
+            <header class="panel-heading">
+              <span class="label bg-info  pull-right">{{ queryset }} Offer Active</span>
+              Current Offers
+            </header>
+            <div class="pull-out">
+              <table class="table table-striped m-b-none text-small">
+                <thead>
+                  <tr>
+                    <th>Timeline</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Days left</th>
+                    <th>Name</th>
+                    <th>Approved</th>
+                    <th width="70">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for query in queryset %}
+                    <tr>
+                    <td>
+                      <div class="progress progress-small progress-striped active m-t-mini m-b-none">
+                        <div class="progress-bar progress-bar-success" data-toggle="tooltip" data-original-title
+                                ="Percentage Completed: {{ query.time_left }} %" style="width:{{ query.time_left }}%"></div>
+                      </div>
+                    </td>
+                    <td>{{ query.start_date }}</td>
+                    <td>{{ query.end_date }}</td>
+                    <td>{{ query.days_left }}</td>
+                    <td>{{ query.name }}</td>
+                        {% if query.approved == True %}
+                        <td><span class="label label-success">Approved</span></td>
+                        {% else %}
+                        <td><span class="label label-primary">Pending</span></td>
+                        {% endif %}
+                    <td class="text-right">
+                      <div class="btn-group">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-pencil"></i></a>
+                        <ul class="dropdown-menu pull-right">
+                          <li><a href="{% url "edit_offer" query.id %}">Edit Offer</a></li>
+                          <li><a class="end_offer" id="end_offer" offer_id="{{ query.id }}" offer_name="{{ query.name }}" href="#">End Offer</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+    <div class="col-lg-6 pull-left">
+          <section class="panel">
+            <header class="panel-heading">
+              Current Idle Screen
+            </header>
+            <div class="pull-out">
+              <table class="table table-striped m-b-none text-small">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Content</th>
+                    <th>Approved</th>
+                    <th width="70">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for query in idle_screen %}
+                    <tr>
+                    <td>{{ query.id }}</td>
+                    <td><a href="/media/{{query.content}}">{{ query.content }}</a></td>
+                        {% if query.approved == True %}
+                        <td><span class="label label-success">Approved</span></td>
+                        {% else %}
+                        <td><span class="label label-primary">Pending</span></td>
+                        {% endif %}
+                    <td class="text-right">
+                      <div class="btn-group">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-pencil"></i></a>
+                        <ul class="dropdown-menu pull-right">
+                          <li><a href="{% url "edit_idle_screen" query.id %}">Edit Idle Screen</a></li>
+                          <li><a class="delete_idle_screen" id="delete_idle_screen" idle_screen_id="{{ query.id }}" href="#">Delete Idle Screen</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+</div>
+    <div class="row">
+    <div class="col-lg-12">
+   <!-- scrollable inbox widget -->
+{#   <section class="panel">#}
+{#      <header class="panel-heading">#}
+{#         <ul class="nav nav-pills pull-right">#}
+{#            <li> <a href="#" class="panel-toggle text-muted"><i class="fa fa-caret-down fa-lg text-active"></i><i class="fa fa-caret-up fa-lg text"></i></a> </li>#}
+{#         </ul>#}
+{#         <span class="label label-large bg-default">20</span> Top Styles#}
+{#      </header>#}
+{#      <section style="height:210px" class="panel-body scrollbar scroll-y m-b">#}
+{#         <article class="media">#}
+{#            <span class="pull-left thumb-small"><img src="/static/images/avatar.jpg" alt="John said" class="img-circle"></span>#}
+{#            <div class="media-body">#}
+{#               <div class="pull-right media-mini text-center text-muted"> <strong class="h4">12:18</strong><br> <small class="label bg-light">pm</small> </div>#}
+{#               <a href="#" class="h4">testing</a> <small class="block"><a href="#" class="">test</a> <span class="label label-success">Circle</span></small> <small class="block">Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</small>#}
+{#            </div>#}
+{#         </article>#}
+{#         <div class="line pull-in"></div>#}
+{##}
+{#      </section>#}
+{#   </section>#}
+   <!-- / scrollable inbox widget-->
+</div>
+
+    </div>
+{% endblock %}

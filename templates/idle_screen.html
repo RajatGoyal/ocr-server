@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<section id="content">
+    <section class="main padder">
+      <div class="clearfix">
+        <h4><i class="icon-edit"></i>Idle Screen</h4>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-offset-2">
+            {% if success == True %}
+                <h3 class="col-offset-4"> <span class="label label-success">Idle Screen Saved Successfully</span></h3>
+            {% endif %}
+              {% crispy form %}
+       </div>
+       </div>
+    </section>
+</section>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<script>
+$(document).ready(function() {
+
+    $(function () {
+        $('#datetimepicker8').datetimepicker();
+        $('#datetimepicker9').datetimepicker();
+        $("#datetimepicker8").on("dp.change",function (e) {
+           //change date here if you want
+        });
+        $("#datetimepicker9").on("dp.change",function (e) {
+          // $('#datetimepicker8').data("DateTimePicker").setDate(e.date + '00:00 PM');
+        });
+    });
+
+    $("select").imagepicker({
+          hide_select : false,
+          show_label  : true
+    });
+
+    $(function () {
+    $('#id_company_wide').change(function () {
+         $('#div_id_store').fadeToggle(!this.checked);
+      }).change();
+    });
+
+        $(function () {
+    $('#id_popup').change(function () {
+         $('#div_id_popup_image').fadeToggle(this.checked);
+      }).change();
+    });
+});
+
+</script>
+
+<section id="content">
+    <section class="main padder">
+      <div class="clearfix">
+        <h4><i class="icon-edit"></i>Offer Details</h4>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-offset-2">
+            {% if success == True %}
+                <h3 class="col-offset-4"> <span class="label label-success">Offer Saved Successfully</span></h3>
+            {% endif %}
+              {% crispy form %}
+       </div>
+       </div>
+    </section>
+</section>
+
+{% endblock %}

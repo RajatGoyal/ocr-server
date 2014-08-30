@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<section id="content">
+    <section class="main padder">
+      <div class="clearfix">
+        <h4><i class="icon-edit"></i>Style Details</h4>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-offset-2">
+
+              {% crispy form %}
+
+
+{% endblock %}
