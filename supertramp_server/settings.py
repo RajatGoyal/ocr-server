@@ -103,6 +103,7 @@ MEDIA_ROOT = 'media'
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_URL = '/www/sueprtramp_server/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
