@@ -8,6 +8,7 @@ USER=azureuser                                    # the user to run as
 NUM_WORKERS=20                                    # how many worker processes should Gunicorn spawn
 DJANGO_SETTINGS_MODULE=supertramp_server.settings # which settings file should Django use
 DJANGO_WSGI_MODULE=supertramp_server.wsgi         # WSGI module name
+TIMEOUT=300
 
 echo "Starting $NAME as `whoami`"
 
@@ -26,6 +27,7 @@ test -d $RUNDIR || mkdir -p $RUNDIR
 exec gunicorn ${DJANGO_WSGI_MODULE}:application \
   --name $NAME \
   --workers $NUM_WORKERS \
+  --timeout $TIMEOUT \
   --user=$USER \
   --log-level=debug \
   --bind=unix:$SOCKFILE
