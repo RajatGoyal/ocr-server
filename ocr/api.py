@@ -43,7 +43,7 @@ class Task(ModelResource):
 
     def prepend_urls(self):
         return [
-            url(r"^(?P<resource_name>%s)/jira%s$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('proxy_get'), name="get_jira"),
+            url(r"^(?P<resource_name>%s)/jira/(?P<url>%s)$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('proxy_get'), name="get_jira"),
             url(r"^(?P<resource_name>%s)/add%s$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('run_ocr'), name="add_task"),
             url(r"^(?P<resource_name>%s)/([^/]+%s)?$" % (self._meta.resource_name, trailing_slash()), self.wrap_view('home'), name="home")
             ]
@@ -65,7 +65,7 @@ class Task(ModelResource):
         return response
 
     @csrf_exempt
-    def proxy_get(request, url):
+    def proxy_get(self, request, url, **kwargs):
         url = url + "?"+request.META['QUERY_STRING']
         headers={"Authorization": request.META.get('HTTP_AUTHORIZATION')}
         resp = requests.get(url, headers=headers, data=request.REQUEST)
