@@ -5,9 +5,9 @@ var scope = '';
 var resolverApp = angular.module('resolverApp', ['ngRoute', 'LocalStorageModule']);
 
 resolverApp.run(function($http, localStorageService) {
-    var username = localStorageService.get('JiraCreds').username;
-    var password = localStorageService.get('JiraCreds').password;
-    $http.defaults.headers.common.Authorization = 'Basic ' +btoa(username + ":" + password);
+//    var username = localStorageService.get('JiraCreds').username;
+//    var password = localStorageService.get('JiraCreds').password;
+//    $http.defaults.headers.common.Authorization = 'Basic ' +btoa(username + ":" + password);
 });
 
 
